@@ -32,7 +32,7 @@ class HealthPlusWebsiteTest(unittest.TestCase):
         time.sleep(2)
         self.assertIn("Services", self.driver.page_source)
 
-    def test_review_link_navigation(self):
+    def test_Book_Appointment(self):
         """Test Case 3: Verify Clicking 'Reviews' Link Navigates to Reviews Page"""
         self.driver.get("http://localhost:3000/Health-Plus")
         review_link = WebDriverWait(self.driver, 30).until(
@@ -42,15 +42,15 @@ class HealthPlusWebsiteTest(unittest.TestCase):
         time.sleep(2)
         self.assertIn("Reviews", self.driver.page_source)
 
-    def test_about_link_navigation(self):
-        """Test Case 4: Verify Clicking 'Contributor' Link Navigates to Contributor Section"""
+    def test_contributors_link_navigation(self):
+        """Test Case 4: Verify Clicking 'Contributors' Link Navigates to About Section"""
         self.driver.get("http://localhost:3000/Health-Plus")
         about_link = WebDriverWait(self.driver, 30).until(
-            EC.presence_of_element_located((By.LINK_TEXT, "Contributor"))
+            EC.presence_of_element_located((By.LINK_TEXT, "Contributors"))
         )
         about_link.click()
         time.sleep(2)
-        self.assertIn("About", self.driver.page_source)
+        self.assertIn("Contributors", self.driver.page_source)
         
         
 
@@ -64,7 +64,7 @@ class HealthPlusWebsiteTest(unittest.TestCase):
         time.sleep(2)
         self.assertIn("Doctors", self.driver.page_source)
     
-    def test_Book_Appointment(self):
+    def test_review_link_navigation(self):
         """Test Case 3: Verify Clicking 'Reviews' Link Navigates to Appointment Page"""
         self.driver.get("http://localhost:3000/Health-Plus")
         review_link = WebDriverWait(self.driver, 30).until(
@@ -96,7 +96,7 @@ class HealthPlusWebsiteTest(unittest.TestCase):
         
     # def test_social_media_links(self):
     #     """Test Case 8: Verify Social Media Links Redirect to Correct Pages"""
-    #     self.driver.get("http://localhost:3000/Health-Plus")
+    #     self.driver.get("https://alkaison.github.io/Health-Plus/")
         
     #     try:
     #         # Locate and click the Facebook icon
