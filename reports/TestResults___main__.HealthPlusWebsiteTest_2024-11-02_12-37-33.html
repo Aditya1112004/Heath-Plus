@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-11-02 12:37:33</p>
+                <p class='attribute'><strong>Duration: </strong>73.40 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 8, Pass: 6, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.HealthPlusWebsiteTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Book_Appointment</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB303AF5+28005]
+	(No symbol) [0x00007FF7FB2683F0]
+	(No symbol) [0x00007FF7FB10580A]
+	(No symbol) [0x00007FF7FB155A3E]
+	(No symbol) [0x00007FF7FB155D2C]
+	(No symbol) [0x00007FF7FB19EA97]
+	(No symbol) [0x00007FF7FB17BA7F]
+	(No symbol) [0x00007FF7FB19B8B3]
+	(No symbol) [0x00007FF7FB17B7E3]
+	(No symbol) [0x00007FF7FB1475C8]
+	(No symbol) [0x00007FF7FB148731]
+	GetHandleVerifier [0x00007FF7FB5F646D+3118813]
+	GetHandleVerifier [0x00007FF7FB646CC0+3448624]
+	GetHandleVerifier [0x00007FF7FB63CF3D+3408301]
+	GetHandleVerifier [0x00007FF7FB3CA44B+841403]
+	(No symbol) [0x00007FF7FB27344F]
+	(No symbol) [0x00007FF7FB26F4C4]
+	(No symbol) [0x00007FF7FB26F65D]
+	(No symbol) [0x00007FF7FB25EBB9]
+	BaseThreadInitThunk [0x00007FFCFEB2257D+29]
+	RtlUserThreadStart [0x00007FFD0032AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Aditya\Downloads\Health-Plus-main (1)\Health-Plus-main\7_1-1.py", line 70, in test_Book_Appointment
+    review_link = WebDriverWait(self.driver, 30).until(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aditya\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB303AF5+28005]
+	(No symbol) [0x00007FF7FB2683F0]
+	(No symbol) [0x00007FF7FB10580A]
+	(No symbol) [0x00007FF7FB155A3E]
+	(No symbol) [0x00007FF7FB155D2C]
+	(No symbol) [0x00007FF7FB19EA97]
+	(No symbol) [0x00007FF7FB17BA7F]
+	(No symbol) [0x00007FF7FB19B8B3]
+	(No symbol) [0x00007FF7FB17B7E3]
+	(No symbol) [0x00007FF7FB1475C8]
+	(No symbol) [0x00007FF7FB148731]
+	GetHandleVerifier [0x00007FF7FB5F646D+3118813]
+	GetHandleVerifier [0x00007FF7FB646CC0+3448624]
+	GetHandleVerifier [0x00007FF7FB63CF3D+3408301]
+	GetHandleVerifier [0x00007FF7FB3CA44B+841403]
+	(No symbol) [0x00007FF7FB27344F]
+	(No symbol) [0x00007FF7FB26F4C4]
+	(No symbol) [0x00007FF7FB26F65D]
+	(No symbol) [0x00007FF7FB25EBB9]
+	BaseThreadInitThunk [0x00007FFCFEB2257D+29]
+	RtlUserThreadStart [0x00007FFD0032AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_Slider_button</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_about_link_navigation</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB303AF5+28005]
+	(No symbol) [0x00007FF7FB2683F0]
+	(No symbol) [0x00007FF7FB10580A]
+	(No symbol) [0x00007FF7FB155A3E]
+	(No symbol) [0x00007FF7FB155D2C]
+	(No symbol) [0x00007FF7FB19EA97]
+	(No symbol) [0x00007FF7FB17BA7F]
+	(No symbol) [0x00007FF7FB19B8B3]
+	(No symbol) [0x00007FF7FB17B7E3]
+	(No symbol) [0x00007FF7FB1475C8]
+	(No symbol) [0x00007FF7FB148731]
+	GetHandleVerifier [0x00007FF7FB5F646D+3118813]
+	GetHandleVerifier [0x00007FF7FB646CC0+3448624]
+	GetHandleVerifier [0x00007FF7FB63CF3D+3408301]
+	GetHandleVerifier [0x00007FF7FB3CA44B+841403]
+	(No symbol) [0x00007FF7FB27344F]
+	(No symbol) [0x00007FF7FB26F4C4]
+	(No symbol) [0x00007FF7FB26F65D]
+	(No symbol) [0x00007FF7FB25EBB9]
+	BaseThreadInitThunk [0x00007FFCFEB2257D+29]
+	RtlUserThreadStart [0x00007FFD0032AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Aditya\Downloads\Health-Plus-main (1)\Health-Plus-main\7_1-1.py", line 48, in test_about_link_navigation
+    about_link = WebDriverWait(self.driver, 30).until(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aditya\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB303AF5+28005]
+	(No symbol) [0x00007FF7FB2683F0]
+	(No symbol) [0x00007FF7FB10580A]
+	(No symbol) [0x00007FF7FB155A3E]
+	(No symbol) [0x00007FF7FB155D2C]
+	(No symbol) [0x00007FF7FB19EA97]
+	(No symbol) [0x00007FF7FB17BA7F]
+	(No symbol) [0x00007FF7FB19B8B3]
+	(No symbol) [0x00007FF7FB17B7E3]
+	(No symbol) [0x00007FF7FB1475C8]
+	(No symbol) [0x00007FF7FB148731]
+	GetHandleVerifier [0x00007FF7FB5F646D+3118813]
+	GetHandleVerifier [0x00007FF7FB646CC0+3448624]
+	GetHandleVerifier [0x00007FF7FB63CF3D+3408301]
+	GetHandleVerifier [0x00007FF7FB3CA44B+841403]
+	(No symbol) [0x00007FF7FB27344F]
+	(No symbol) [0x00007FF7FB26F4C4]
+	(No symbol) [0x00007FF7FB26F65D]
+	(No symbol) [0x00007FF7FB25EBB9]
+	BaseThreadInitThunk [0x00007FFCFEB2257D+29]
+	RtlUserThreadStart [0x00007FFD0032AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_doctors_link_navigation</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_home_page_title</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_review_link_navigation</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_service_link_navigation</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_subscribe_button</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 8, Pass: 6, Error: 2 -- Duration: 73.40 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
